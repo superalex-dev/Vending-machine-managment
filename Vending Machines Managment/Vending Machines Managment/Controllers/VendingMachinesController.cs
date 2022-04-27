@@ -59,7 +59,7 @@ namespace Vending_Machines_Managment.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Location,InstalledOn,TypeId")] VendingMachine vendingMachine)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 _context.Add(vendingMachine);
                 await _context.SaveChangesAsync();
