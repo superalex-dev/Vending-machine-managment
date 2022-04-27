@@ -18,22 +18,27 @@
                 <input asp-for="Location" class="form-control" />
                 <span asp-validation-for="Location" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="InstalledOn" class="control-label"></label>
                 <input asp-for="InstalledOn" class="form-control" />
                 <span asp-validation-for="InstalledOn" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="TypeId" class="control-label"></label>
                 <select asp-for="TypeId" class="form-control" asp-items="ViewBag.TypeId"></select>
                 <span asp-validation-for="TypeId" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
+
+<br />
 
 <div>
     <a asp-action="Index">Back to List</a>
